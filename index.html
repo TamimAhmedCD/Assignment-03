@@ -12,8 +12,7 @@
           theme: {
             extend: {
               colors: {
-                textdark: 'rgb(33, 33, 33)',
-                textlight: 'rgb(73, 73, 73)',
+
                 opecity: 'rgb(115, 115, 115)',
                 bgprimary: 'rgb(244, 244, 244)',
                 bgtransparent:'rgba(255, 255, 255, 0)',
@@ -42,8 +41,115 @@
     <header class="bg-bgtransparent">
 
         <!-- Navbar Section Started Here -->
-        <nav>
-            <h1>Again Testing Heading</h1>
+        <nav class="px-5 py-8 md:px-8 md:py-10 lg:px-20 lg:py-12 flex items-center justify-between">
+
+          <!-- Logo -->
+          <div class="flex items-center gap-2">
+
+            <!-- Icon -->
+            <button class="btn btn-circle bg-lime-300 border-none hover:bg-lime-400">
+              <svg width="13.505859" height="13.500488" viewBox="0 0 13.5059 13.5005" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                    Created with Pixso.
+                </desc>
+                <defs/>
+                <path id="Vector" d="M11.75 1.75L0.75 12.74" stroke="#1C1C1C" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+                <path id="Vector" d="M5.75 0.88C5.75 0.88 11.39 0.4 12.24 1.26C13.1 2.11 12.62 7.75 12.62 7.75" stroke="#1C1C1C" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+              </svg>
+              
+            </button>
+
+            <!-- Logo -->
+            <h1 class="text-neutral-800 font-bold text-[28px] lg:text-4xl">Rinterio</h1>
+          </div>
+
+          <!-- Nav List -->
+          <div class="hidden xl:block">
+            <ul class="flex gap-9 text-neutral-500">
+              <li><a href="#" class="text-neutral-600 font-black">Home</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Service</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Nav btn -->
+          <div class="flex items-center gap-4">
+            <div class="hidden md:flex items-center gap-4">
+            <!-- Search btn -->
+            <button class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+
+            <!-- Cart btn -->
+            <button class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>  
+            </button>
+
+            <!-- Book btn -->
+            <div class="rounded-full bg-lime-300 border-none py-3 px-3 space-x-3 pl-6"> <span class="text-xl font-black text-neutral-800">Book Consult</span>
+              <button class="btn btn-circle bg-neutral-800 border-none hover:bg-neutral-900 p">
+                <svg width="13.505707" height="13.500000" viewBox="0 0 13.5057 13.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                      Created with Pixso.
+                  </desc>
+                  <defs/>
+                  <path id="Vector" d="M11.75 1.75L0.75 12.74" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+                  <path id="Vector" d="M5.75 0.88C5.75 0.88 11.39 0.4 12.24 1.26C13.09 2.11 12.62 7.75 12.62 7.75" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Drop-Down -->
+
+          <div class="dropdown dropdown-left lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li><a href="#" class="text-neutral-600 font-black">Home</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Service</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
+              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
         </nav>
 
         <!-- Hero Section Started Here -->
