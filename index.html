@@ -35,13 +35,13 @@
     </style>
     <title>Rinterio</title>
 </head>
-<body class="bg-bgprimary">
+<body class="bg-neutral-200">
 
     <!-- This is a Header -->
-    <header class="bg-bgtransparent">
+    <header class="bg-neutral-100">
 
         <!-- Navbar Section Started Here -->
-        <nav class="px-5 py-8 md:px-8 md:py-10 lg:px-20 lg:py-12 flex items-center justify-between">
+        <nav class="px-5 py-8 md:px-8 md:py-6 lg:px-20 lg:py-12 flex items-center justify-between">
 
           <!-- Logo -->
           <div class="flex items-center gap-2">
@@ -66,11 +66,11 @@
           <!-- Nav List -->
           <div class="hidden xl:block">
             <ul class="flex gap-9 text-neutral-500">
-              <li><a href="#" class="text-neutral-600 font-black">Home</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Service</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
+              <li><a href="#home" class="text-neutral-600 font-black">Home</a></li>
+              <li><a href="#service" class="hover:text-neutral-600 hover:font-black">Service</a></li>
+              <li><a href="#portfolio" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
+              <li><a href="#blogs" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
+              <li><a href="#contact-us" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
             </ul>
           </div>
 
@@ -122,10 +122,10 @@
                 </svg>
               </button>
             </div>
-          </div>
+            </div>
           <!-- Drop-Down -->
 
-          <div class="dropdown dropdown-left lg:hidden">
+            <div class="dropdown dropdown-left xl:hidden">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-white border-2 border-neutral-200 text-neutral-500 hover:bg-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,19 +141,44 @@
               </svg>
             </div>
             <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-              <li><a href="#" class="text-neutral-600 font-black">Home</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Service</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
-              <li><a href="#" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
+              <li><a href="#home" class="text-neutral-600 font-black">Home</a></li>
+              <li><a href="#service" class="hover:text-neutral-600 hover:font-black">Service</a></li>
+              <li><a href="#portfolio" class="hover:text-neutral-600 hover:font-black">Portfolio</a></li>
+              <li><a href="#blogs" class="hover:text-neutral-600 hover:font-black">Blogs</a></li>
+              <li><a href="#contact-us" class="hover:text-neutral-600 hover:font-black">Contact Us</a></li>
             </ul>
-          </div>
+            </div>
           </div>
         </div>
         </nav>
 
         <!-- Hero Section Started Here -->
-        <section></section>
+        <section class="px-5 md:px-8 lg:px-20 lg:py-12 grid place-items-center">
+
+          <!-- Img -->
+          <img src="./assets/banner.png" alt="">
+
+          <!-- Text -->
+          <h1 class="text-3xl md:text-4xl lg:text-6xl text-neutral-800 font-black text-center my-6">A barn house of this design has a striking appearance</h1>
+          <p class="text-center text-neutral-600 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+
+          <!-- btn -->
+          <div class="flex items-center gap-4">
+            <div class="rounded-full bg-lime-200 border-2 border-lime-400 py-3 px-3 space-x-3 pl-6"> <span class="text-xl font-black text-neutral-800">View Details</span>
+              <button class="btn btn-circle bg-lime-300 border-none hover:bg-lime-400">
+                <svg width="13.505859" height="13.500488" viewBox="0 0 13.5059 13.5005" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                      Created with Pixso.
+                  </desc>
+                  <defs/>
+                  <path id="Vector" d="M11.75 1.75L0.75 12.74" stroke="#1C1C1C" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+                  <path id="Vector" d="M5.75 0.88C5.75 0.88 11.39 0.4 12.24 1.26C13.1 2.11 12.62 7.75 12.62 7.75" stroke="#1C1C1C" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            </div>
+        </section>
+        
     </header>
 
     <!-- This is a Main -->
